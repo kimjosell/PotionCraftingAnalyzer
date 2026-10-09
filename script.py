@@ -555,7 +555,7 @@ def main(config_path=JSON_config_path):
     engine = init_engine(config_path)
     config = load_config(config_path)
 
-    tracemalloc.start()
+    # tracemalloc.start()
     start = time.perf_counter()
     cost = compute_cost_map(engine, base_ingredients_of(config), base_alters_of(config))
     # current, peak = tracemalloc.get_traced_memory()
